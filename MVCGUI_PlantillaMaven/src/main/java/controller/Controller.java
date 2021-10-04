@@ -5,14 +5,14 @@
  */
 package controller;
 
+import model.Model;
+import view.View;
+
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import model.Model;
-import view.View2021;
-
-import javax.swing.*;
 
 /**
  *
@@ -21,9 +21,9 @@ import javax.swing.*;
 public class Controller {
     
     private static Model model;
-    private static View2021 view;
+    private static View view;
     
-    public Controller(Model m, View2021 v){
+    public Controller(Model m, View v){
         model=m;
         view=v;
         controlador();

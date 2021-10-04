@@ -2,11 +2,11 @@ package view;
 
 import javax.swing.*;
 
-public class View2021  extends JFrame {
+public class View extends JFrame {
     private JPanel panel;
     private JButton button1;
 
-    public View2021(){
+    public View(){
         setContentPane(panel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();

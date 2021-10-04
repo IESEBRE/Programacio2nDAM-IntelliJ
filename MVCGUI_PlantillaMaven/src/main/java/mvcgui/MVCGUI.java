@@ -7,7 +7,7 @@ package mvcgui;
 
 import controller.Controller;
 import model.Model;
-import view.View2021;
+import view.View;
 
 import javax.swing.*;
 
@@ -33,6 +33,6 @@ public class MVCGUI {
     }
 
     public static void createAndShowGUI() throws Exception {
-        new Controller(new Model(),new View2021());
+        new Controller(new Model(),new View());
     }
 }
