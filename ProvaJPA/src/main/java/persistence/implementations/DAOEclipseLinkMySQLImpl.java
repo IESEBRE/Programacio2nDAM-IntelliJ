@@ -7,11 +7,12 @@ import jakarta.persistence.TypedQuery;
 import persistence.daos.DAO;
 import persistence.entities.Pojo;
 import persistence.exceptions.DAOException;
+import persistence.javabeans.JavaBeansJPA;
 
 import java.util.List;
 
 public class DAOEclipseLinkMySQLImpl implements DAO<Pojo> {
-
+    private JavaBeansJPA bean;
     private EntityManagerFactory emf;
 
     public DAOEclipseLinkMySQLImpl(String persistenceUnitName) throws DAOException {
@@ -37,7 +38,7 @@ public class DAOEclipseLinkMySQLImpl implements DAO<Pojo> {
                     = em.createQuery("SELECT p FROM Pojo p", Pojo.class);
             resultat = query.getResultList();
         } catch (Exception e) {
-            throw new DAOException(3);
+            throw new DAOException(4);
         } finally {
             em.close();
         }
